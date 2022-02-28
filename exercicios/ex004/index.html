@@ -8,15 +8,46 @@
     <style>
         body {
             font: normal 1.5rem Arial, sans-serif;
+            background-color: #F0F8FF;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <h1>Práticas em JS</h1>
     <script>
         var nome = window.prompt('Qual é seu nome?')
         document.write(`Olá, <strong>${nome}</strong>. Seu nome possui <strong>${nome.length}</strong> letras. <br>`)
         document.write(`Seu nome em letras maiúsculas é <strong>${nome.toUpperCase()}.</strong> <br>`)
-        document.write(`Seu nome em letras minúsculas é <strong>${nome.toLowerCase()}.</strong>`)
+        document.write(`Seu nome em letras minúsculas é <strong>${nome.toLowerCase()}.</strong> <br>`)
+        
+        var n1 = Number(window.prompt('Digite o primeiro número:'))
+        var n2 = Number(window.prompt('Digite outro número:'))
+        var S = n1 + n2
+
+        // Número 1
+        document.write(`<br>`)
+        document.write(`Operações com o número <strong>${n1}</strong><br>`)
+        document.write(`Esse número somado a ele mesmo vale: <strong>${n1 + n1}</strong>. <br>`)
+        document.write(`Esse número multiplicado a ele mesmo vale <strong>${n1 * n1}</strong>. <br>`)
+        document.write(`Esse número dividido por ele mesmo vale <strong>${n1 / n1}</strong>. <br>`)
+        document.write(`Esse número a potência dele mesmo vale <strong>${n1 ** n1}</strong>. <br>`)
+
+        // Número 2
+        document.write(`<br>`)
+        document.write(`Operações com o número <strong>${n2}</strong><br>`)
+        document.write(`Esse número somado a ele mesmo vale: <strong>${n2 + n2}</strong>. <br>`)
+        document.write(`Esse número multiplicado a ele mesmo vale <strong>${n2 * n2}</strong>. <br>`)
+        document.write(`Esse número dividido por ele mesmo vale <strong>${n2 / n2}</strong>. <br>`)
+        document.write(`Esse número a potência dele mesmo vale <strong>${n2 ** n2}</strong>. <br>`)
+
+        // Números 1 e 2
+        document.write(`<br>`)
+        document.write(`A soma entre ${n1} e ${n2} vale: <strong>${S}.</strong> <br>`)
+        document.write(`O valor de ${n1} - ${n2} vale: <strong>${n1 - n2}.</strong> <br>`)
+        document.write(`O valor da multiplicação de ${n1} x ${n2} vale: <strong>${n1 * n2}.</strong> <br>`)
+        document.write(`O valor da divisão de ${n1} / ${n2} vale: <strong>${n1 / n2}.</strong> <br>`)
+        document.write(`O resto da divisão entre ${n1} / ${n2} vale: <strong>${n1 % n2}.</strong> <br>`)
     </script>
 </body>
 </html>
