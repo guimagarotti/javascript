@@ -17,11 +17,19 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Resultado aqui:</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
-    <div>Clique aqui!</div>
+    <div class="button">Clique aqui!</div>
     
     <!-- JavaScript -->
     <script>
-        
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var botão = document.querySelector('div.button')
+        botão.style.background = 'black'
+        botão.innerText = 'Etcha galera...'
+
+
+
+
     </script>
 </body>
 </html>
