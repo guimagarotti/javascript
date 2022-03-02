@@ -16,7 +16,8 @@
             line-height: 200px;
             font-size: 1.8rem;
             font-family: Arial, Helvetica, sans-serif;
-            margin: auto;            
+            margin: auto;
+            cursor: pointer;        
         } 
     </style>
 </head>
@@ -24,5 +25,25 @@
     <div id="area">
         Interação!
     </div>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'blue'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'red'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
 </body>
 </html>
