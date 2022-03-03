@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práticas com DOM</title>
+    <style>
+        body {
+            background-color: #F0F8FF;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            width: 150px;
+            margin: 10px;
+        }
+        
+        select {
+            width: 156px;
+            margin: 10px;
+        }
+        
+        label {
+            margin-left: 10px;
+        }
+
+        input#button {
+            width: 60px;
+        }
+
+        div#res {
+            padding: 10px 0px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Nome, Idade e Estado</h1>
+    <label><strong>Nome</strong></label>
+    <input type="text" name="text1" id="text1">
+    <label><strong>Idade</strong></label>
+    <input type="number" name="text2" id="text2">
+    <label><strong>Estado</strong></label>
+    <select name="text3" id="text3">
+        <option value="SP">SP</option>
+        <option value="RJ">RJ</option>
+        <option value="SC">SC</option>
+        <option value="PB">PB</option>
+        <option value="MG">MG</option>
+    </select>
+    <input type="button" value="Enviar" onclick="enviar()" id="button">
+    <div id="res">
+        <strong>Informações:</strong>
+    </div>
+
+    <script>
+        function enviar() {
+            var box1 = window.document.getElementById('text1')
+            var box2 = window.document.getElementById('text2')
+            var box3 = window.document.getElementById('text3')
+            var res = window.document.getElementById('res')
+            var nome = String(text1.value)
+            var idade = Number(text2.value)
+            var cep = text3.value
+            res.innerHTML = (`Olá, <strong>${nome}</strong>! Você tem <strong>${idade}</strong> anos, e mora no estado de <strong>${cep}</strong>!`)
+        }
+    </script>
+</body>
+</html>
