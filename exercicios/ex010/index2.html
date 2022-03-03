@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO PAÍS</title>
+    <style>
+        body {
+            background-color: #F0F8FF;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input, label, h1 {
+            display: flex;
+            margin: 10px;
+        }
+
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Estrangeirismo:</h1>
+    <label><strong>Nome:</strong></label> 
+    <input type="text" name="textname" id="textname">
+    <label><strong>País:</strong></label> 
+    <input type="text" name="textcep" id="textcep">
+    <input type="button" value="Analisar" onclick="analisar()">
+    <div id="info"><p><strong>Resultado:</strong></p></div>
+    <!-- JS -->
+    <script>
+        function analisar() {
+            var box1 = window.document.getElementById('textname')
+            var box2 = window.document.getElementById('textcep')
+            var info = window.document.getElementById('info')
+            var nome = box1.value
+            var país = box2.value
+
+            info.innerHTML = `<p>Olá, <strong>${nome}!</strong></p>`
+            info.innerHTML += `<p>Atualmente, você está morando no/na <strong>${país}</strong>.</p>`
+            if (país != 'Brasil') {
+                info.innerHTML += `<p>Você é um <strong>estrangeiro!</strong></p>`
+            } else {
+                info.innerHTML += `<p>Você é <strong>brasileiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
