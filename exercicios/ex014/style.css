@@ -21,7 +21,18 @@ section {
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
     margin: auto;
-    width: 50%;
+    width: 40%;
     padding: 20px;
     border-radius: 15px;
+}
+
+img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+div {
+    text-align: center;
+    padding: 10px;
 }
