@@ -25,3 +25,23 @@ section {
     padding: 20px;
     border-radius: 15px;
 }
+
+div#texto > p {
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+div#res {
+    margin: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+input#button {
+    padding: 5px;
+}
+
+img {
+    padding-top: 30px;
+}
+
