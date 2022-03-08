@@ -1,0 +1,17 @@
+var cont = 1
+while (cont < 7) {
+    console.log('Olá!')
+}
+
+
+
+
+/* 
+console.log('Olá!')
+console.log('Olá!')
+console.log('Olá!')
+console.log('Olá!')
+console.log('Olá!')
+console.log('Olá!')
+console.log('Olá!')
+*/
