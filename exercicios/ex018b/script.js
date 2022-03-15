@@ -1,8 +1,5 @@
-let numero = document.getElementById('numI')
-let tabela = document.getElementById('seltab')
-let res = document.getElementById('final')
-let valores = []
-
+var vetor = []
+/*
 function eNumero(n) {
     if (Number(n) >= 1 && Number(n) <= 100) {
         return true
@@ -18,11 +15,17 @@ function naLista(n, lista) {
         return false
     }
 }
+*/
 
-function adicionar(n) {
-    if (eNumero(numero.value) && !naLista(numero.value, valores)) {
-        window.alert('OK!')
-    } else {
+/*
+if (eNumero(numero.value) && !naLista(numero.value, valores)) {
+    window.alert('OK!')
+} else {
+    window.alert('[ERRO] Valor inválido ou já se encontra na lista!')
+}
+*/
+function adicionar() {
+    if (numero.length == 0 || valores.indexOf(Number(numero)) == -1 || numero >= 1 || numero <= 100) {
         window.alert('[ERRO] Valor inválido ou já se encontra na lista!')
     }
 }
