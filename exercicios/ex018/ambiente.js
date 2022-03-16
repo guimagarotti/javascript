@@ -3,7 +3,7 @@ num.push(4)
 console.log(num)
 console.log(`O vetor tem ${num.length} posições.`)
 console.log(`O segundo valor do vetor é ${num[1]}`)
-var pos = num.indexOf(15)
+var pos = num.indexOf(3)
 if (pos == -1) {
     console.log('[ERRO] Valor não encontrado!')
 } else {
