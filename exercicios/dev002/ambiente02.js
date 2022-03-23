@@ -16,7 +16,7 @@ const tudo = [
     },
 ]
 
-const {id, description, isCompleted} = tudo
+const tudoPosition = tudo[2]
 
-console.log(tudo[2])
-console.log(tudo[2].description)
+console.log(tudoPosition)
+console.log(tudoPosition.description)
