@@ -1,20 +1,29 @@
-const botao = document.getElementById('button')
-const nome = document.getElementById('nome')
-const email = document.getElementById('email')
-const formulario = document.getElementById('form')
+const botao = document.getElementById("button")
+const nome = document.getElementById("nome")
+const email = document.getElementById("email")
+const dados = document.querySelector(".itens")
 
-const itens = document.querySelector('.itens')
+const msgErro = document.querySelector(".msg")
 
-botao.addEventListener('click', function (evento) {
+botao.addEventListener("click", function (evento) {
+    evento.preventDefault()
+    
     const valorNome = nome.value;
     const valorEmail = email.value;
     
-    if (nome.value.length == '' || email.value.length == '') {
-        return window.alert('[ERRO] Preencha todos os campos!')
-    }
+    if (valorNome === '' || valorEmail === '') {
+        msgErro.textContent = "Por favor preencha os campos!";
 
-    formulario.style.background = 'lightgreen'
-    itens.firstElementChild.innerHTML = valorNome;
-    itens.lastElementChild.innerHTML = valorEmail;
-})
+        return setTimeout(() => {
+            msgErro.innerHTML = ""
+        }, 3500);
+    }
     
+    const li = document.createElement('li')
+    li.innerHTML = `Nome: ${valorNome} <br> Email: ${valorEmail}`
+
+    dados.appendChild(li);
+
+    nome.value = "";
+    email.value = "";
+});
