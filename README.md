@@ -1,4 +1,2 @@
-# javascript
- Curso JavaScript realizado com o Professor Guanabara!
- 
- Estou adquirindo meus primeiros conhecimentos em JS.
+# Curso de JavaScript.
+## Curso de JavaScript realizado no Canal CursoemVideo e DicasparaDevs.
